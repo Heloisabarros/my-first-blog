@@ -5,7 +5,7 @@
         <title>Ola's blog</title>
     </head>
     <body>
-        
+
     </body>
 </html>
 <h1>Passa a dica!<h1>
@@ -13,18 +13,17 @@
 <em>A escolha do futuro profissional é um dos maiores dilemas da vida de um jovem. Segundo uma pesquisa realizada pela Universidade Anhembi Morumbi com 18.477 alunos do 3º ano do ensino médio na cidade de São Paulo, 59% desses estudantes já escolheram a carreira que querem seguir. Entretanto, menos da metade (46%) afirmou ter tido algum contato com a profissão escolhida. Pensando nisso, criamos o Passa a Dica! Com o intuito de conectar estudantes do ensino básico e pré-vestibular á universitários a nível nacional que já passaram por esse processo de tomada de decisão.</em>
 
 
-              <h2><a href="">Quem são os usuários da plataforma?</a></h2>
-              <p>O foco do projeto é em alunos que estão se preparando para o processo seletivo para as universidades, tanto envolvendo estudantes do ensino médio, quanto de pré-vestibular. Há espaço também para graduandos que desejam mudar de curso e saber mais informações a respeito. Fazendo a conexão destes com universitários das mais diversas faculdades e cursos por todo o Brasil.
-</p>
-          </div>
 
-          <div>
-            <div>
+<div>
+  <h1><a href="/">Passa a dica!</a></h1>
+</div>
 
-              <h2><a href="">Como funcionará nossa plataforma?</a></h2>
-              <p>O aplicativo irá operar no sistema IOS assim como no Android, para, dessa forma, ser acessível e dar suporte ao maior número de pessoas. Quando o usuário acessar o Passa a Dica! terá a opção de entrar como dois perfis: universitário e vestibulando. No primeiro constará os dados estudantis do graduando, contendo informações como o curso, o período e a instituição de ensino, ficando disponível para o possível contato com o vestibulando. No segundo constará opções para busca com filtros de pesquisa para faculdades e cursos em todo território nacional para que o estudante inicie chats com as pessoas que poderão melhor lhe auxiliar em sua indecisão.
-Para a segurança dos usuários as conversas serão criptografadas e geradas aleatoriamente, sem divulgação de dados pessoais de ambos os lados, mantendo o intuito educacional do projeto.
-</p>
-          </div>
+{% for post in posts %}
+  <div>
+      <p>published: {{ post.published_date }}</p>
+      <h1><a href="">{{ post.title }}</a></h1>
+      <p>{{ post.text|linebreaksbr }}</p>
+  </div>
+{% endfor %}
       </body>
   </html>
