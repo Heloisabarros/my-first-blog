@@ -25,7 +25,7 @@ SECRET_KEY = 'h+i$6ssg6)-ussii@-kh&1s8%8*@px_*!&oqzex3s+ua31b56b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'heloisabns.pythonanywhere.com']
 
 
 # Application definition
